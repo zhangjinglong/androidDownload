@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  
+  xmlns:android="http://schemas.android.com/apk/res/android"  
+  android:layout_width="match_parent"  
+  android:layout_height="match_parent"  
+  android:background="#00000000"
+  android:orientation="horizontal"  
+  >  
+   <LinearLayout  
+  android:layout_width="50dp"  
+  android:layout_height="50dp"  
+ android:gravity="center"
+ android:layout_gravity="center_vertical"
+  android:orientation="vertical"  
+  >  
+      <ImageView android:id="@+id/icon"   
+               android:layout_width="45dp"      
+               android:layout_height="45dp"   
+               android:src="@drawable/ic_launcher"
+               android:scaleType="centerInside"
+               
+               />     
+  </LinearLayout>
+
+  <LinearLayout  
+  android:layout_width="match_parent"  
+  android:layout_height="wrap_content"  
+  android:layout_marginLeft="10dp"
+   android:layout_gravity="center_vertical"
+  android:orientation="vertical"  
+  >  
+  <LinearLayout  
+  android:layout_width="wrap_content"  
+  android:layout_height="wrap_content"  
+  android:orientation="horizontal"  
+  >  
+    <TextView android:id="@+id/down_state_tv"   
+               android:layout_width="wrap_content"      
+               android:layout_height="fill_parent"   
+               android:textSize="16sp"   
+               android:textColor="#ffffff"  
+               android:text="正在下载:"  
+               />     
+             <TextView android:id="@+id/down_apkname"   
+               android:layout_width="wrap_content"      
+               android:layout_height="fill_parent"   
+               android:textSize="10sp"   
+               android:textColor="#ffffff"  
+               android:text="DuangNet"  
+               />           
+  </LinearLayout>
+
+<ProgressBar android:id="@+id/pb"   
+             android:layout_width="match_parent"   
+             android:layout_height="wrap_content"   
+             style="?android:attr/progressBarStyleHorizontal"  
+             android:layout_gravity="center_vertical"/>     
+             
+               <TextView android:id="@+id/down_progress_tv"   
+               android:layout_width="match_parent"      
+               android:layout_height="wrap_content"   
+               android:textSize="14sp"   
+               android:textColor="#ffccff"  
+               android:text="20%"  
+               />            
+ </LinearLayout>
+
+</LinearLayout>  
